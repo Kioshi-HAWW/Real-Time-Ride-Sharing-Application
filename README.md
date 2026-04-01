@@ -1,43 +1,20 @@
-# 🚗 Real-Time Ride Sharing Application
+# Real-Time Ride Sharing Application
+**Advanced Java Programming Course Project**
 
-A full-stack real-time ride sharing platform that connects passengers with nearby drivers using live location tracking, intelligent ride matching, and seamless communication.
+This project is a real-time ride-sharing application built entirely in Java, demonstrating core concepts of the Advanced Java Programming course.
 
-## ✨ Features
+## Features
+- **Client-Server Architecture:** Centralized Server handling real-time requests from multiple Java Swing Clients.
+- **Multithreaded Real-Time Sockets:** Concurrently routes location updates, active rides, and requests via `Socket` and `Thread`.
+- **Java Swing GUI:** Desktop application interface for Riders and Drivers.
+- **JDBC & SQLite:** Stores users and trip details without needing a separate database process running.
+- **Serialization:** Shared Models (`Message`, `RideRequest`, `User`) exchanged over standard I/O ObjectStreams.
 
-* 📍 Real-time GPS tracking of drivers and riders
-* ⚡ Instant ride matching system
-* 💬 In-app communication between driver and passenger
-* 🗺️ Interactive maps integration
-* 🔐 Secure authentication & user profiles
-* 💳 Ride fare estimation (optional enhancement)
-
-## 🛠️ Tech Stack
-
-* **Frontend:** React / Flutter (depending on your implementation)
-* **Backend:** Node.js / Express
-* **Database:** MongoDB / Firebase
-* **Real-time:** WebSockets / Socket.io / Firebase Realtime DB
-* **Maps & Location:** Google Maps API
-
-## 🚀 How It Works
-
-1. User requests a ride
-2. System finds nearby drivers in real-time
-3. Driver accepts the request
-4. Live location tracking begins
-5. Ride completes and fare is calculated
-
-## 📌 Future Improvements
-
-* 🚕 AI-based driver allocation
-* ⭐ Ratings & reviews system
-* 📊 Admin dashboard
-* 💰 Payment gateway integration
-
-## 🤝 Contributing
-
-Pull requests are welcome! Feel free to fork and improve the project.
-
-## 📜 License
-
-This project is open-source and available under the MIT License.
+## How to run the project
+1. Double click `compile.bat` to compile all source codes into `/bin`.
+2. Double click `run_server.bat` to launch the SQLite Socket Server.
+3. Double click `run_client.bat` multiple times to launch Riders and Drivers.
+4. **Login/Register:**
+   - Register a Rider account and a Driver account.
+   - For drivers, click `Simulate Movement` to simulate GPS, and accept ride requests.
+"# Advance-Java-Challenging-grp-26" 
